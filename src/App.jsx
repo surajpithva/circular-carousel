@@ -49,7 +49,7 @@ const App = () => {
               className={`item-carousel ${getCssClass(index)}`}
               key={item.id}
               style={{ transform: `rotate(${index * 36}deg)` }}>
-              <span className="text-dark">{item.name}</span>
+              <span className="text-dark text-decoration-underline">{item.name}</span>
               {index === centerItem && (
                 <div className="image-container">
                   <img src={item.image} alt={item.name} className="center-image" />
