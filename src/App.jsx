@@ -82,7 +82,7 @@ const App = () => {
               key={item.id}
               id={item.id}
               style={{ transform: `rotate(${itemDeg}deg)` }}>
-              <span className="text-dark">  {item.name}  </span>
+              <span className="text-dark">{item.name}</span>
               {index === centerItem && (
                 <div className="image-container">
                   <img src={item.image} alt={item.name} className="center-image" />
@@ -92,8 +92,8 @@ const App = () => {
           ))}
         </div>
       </div>
-      <div className="button-container">
-        <button onClick={next}>Next</button>
+      <div className="button-container ">
+        <button onClick={next} >Next</button>
         <button onClick={prev}>Prev</button>
       </div>
     </>
